@@ -1,0 +1,153 @@
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git checkout -b css-assignmnet
+Switched to a new branch 'css-assignmnet'
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (css-assignmnet)
+$ git checkout master README.txt index.html
+Updated 0 paths from be48d6a
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (css-assignmnet)
+$ git checkout master
+Switched to branch 'master'
+M       README.txt
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git add .
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git checkout css-assignment
+error: pathspec 'css-assignment' did not match any file(s) known to git
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git checkout -b css-assignmnet
+fatal: a branch named 'css-assignmnet' already exists
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git checkout css-assignmnet
+Switched to branch 'css-assignmnet'
+M       README.txt
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (css-assignmnet)
+$ git add .
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (css-assignmnet)
+$ git commit -m "commting copy file 2 jan"
+[css-assignmnet ef4a385] commting copy file 2 jan
+ Committer: Narkhede <vijaya-dilip.narkhede@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (css-assignmnet)
+$ git add .
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (css-assignmnet)
+$ git commit -m "commiting in line 1"
+[css-assignmnet 82aefec] commiting in line 1
+ Committer: Narkhede <vijaya-dilip.narkhede@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (css-assignmnet)
+$ git checkout master
+Switched to branch 'master'
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git add .
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git commit -m "commiting on line 3"
+[master 40900ec] commiting on line 3
+ Committer: Narkhede <vijaya-dilip.narkhede@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git checkout css-assignmnet
+Switched to branch 'css-assignmnet'
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (css-assignmnet)
+$ git add .
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (css-assignmnet)
+$ git commit -m "commiting on css branch"
+[css-assignmnet 3a1ea2f] commiting on css branch
+ Committer: Narkhede <vijaya-dilip.narkhede@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (css-assignmnet)
+$ git checkout master
+Switched to branch 'master'
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git merge css-assignmnet
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master|MERGING)
+$ git branch --delet css-assignmnet
+error: The branch 'css-assignmnet' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D css-assignmnet'.
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master|MERGING)
+$ git branch --delete css-assignmnet
+error: The branch 'css-assignmnet' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D css-assignmnet'.
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master|MERGING)
+$ git branch -D css-assignmnet
+Deleted branch css-assignmnet (was 3a1ea2f).
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master|MERGING)
+$
