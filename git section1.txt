@@ -1,0 +1,108 @@
+vinarkhe@INLEN8520052326 MINGW64 ~ (master)
+$ cd test
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test (master)
+$ cd projrct_dir
+bash: cd: projrct_dir: No such file or directory
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test (master)
+$ cd project_dir
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir (master)
+$ cd Assignment
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ touch README.txt
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git status
+On branch html-assignment
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git add .
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git commit -m "commithing section1"
+[html-assignment 4d08d59] commithing section1
+ Committer: Narkhede <vijaya-dilip.narkhede@capgemini.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git status
+On branch html-assignment
+nothing to commit, working tree clean
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git switch html-assignment
+Already on 'html-assignment'
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git add .
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git status
+On branch html-assignment
+nothing to commit, working tree clean
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git commit -m "commting 28"
+On branch html-assignment
+nothing to commit, working tree clean
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git add .
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git commit -m "30th commit"
+On branch html-assignment
+nothing to commit, working tree clean
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git checkout html-assignment
+Already on 'html-assignment'
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (html-assignment)
+$ git checkout master
+Switched to branch 'master'
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git merge html-assignment
+Updating 2993121..4d08d59
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git branch --delet html-assignmnet
+error: branch 'html-assignmnet' not found.
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$ git branch --delet html-assignment
+Deleted branch html-assignment (was 4d08d59).
+
+vinarkhe@INLEN8520052326 MINGW64 ~/test/project_dir/Assignment (master)
+$
